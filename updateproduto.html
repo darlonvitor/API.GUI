@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>GUI teste</title>
+</head>
+
+<body onload="carregarDados()">
+    <div class="w3-margin w3-third">
+        <div class="w3-card">
+            <header class="w3-container  w3-teal">
+                <h2>Update de Produto</h2>
+            </header>
+            <div class="w3-padding">
+                <p>Atualizar um produto cadastrado no nosso sistema.</p>
+                <form id="updateprodutoform">
+                    <label for="descricao" class="w3-text-teal">Descrição</label>
+                    <input type="text" name="descricao" id="descricao" class="w3-input w3-border w3-light-grey">
+
+                    <label for="quantidade" class="w3-text-teal">Quantidade</label>
+                    <input type="number" name="quantidade" id="quantidade" class="w3-input w3-border w3-light-grey"
+                        min="0">
+
+                    <label for="categoria" class="w3-text-teal">Categoria</label>
+                    <select name="categoria" id="categoria" class="w3-select"></select>
+                </form>
+                <br>
+                <button class="w3-btn w3-blue-grey" onclick="updateProduto()">Atualizar</button>
+                <a class="w3-btn w3-blue-grey" href="produto.html">Voltar</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/crud.js"></script>
+    <script src="js/updateproduto.js"></script>
+</body>
+
+</html>

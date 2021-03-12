@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Import para utilização dos Icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>GUI para teste</title>
+</head>
+
+<body onload="listarCategorias();">
+    <div class="w3-content">
+        <div class="w3-bar w3-teal w3-card">
+            <a href="#" class="w3-bar-item w3-button w3-blue-gray">Categoria</a>
+            <a href="produto.html" class="w3-bar-item w3-button">Produto</a>
+        </div>
+
+
+        <div class="w3-row-padding">
+            <div class="w3-col m7">
+                <h2>Categorias</h2>
+                <p>Lista com as categorias cadastradas no nosso sistema.</p>
+
+                <table class="w3-table w3-hoverable w3-bordered " id="tabela_categorias">
+                    <tr class="w3-teal">
+                        <th>Categoria</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </table>
+            </div>
+            <div class="w3-col m1">&nbsp;</div>
+
+            <div class="w3-col m4 w3-card w3-padding w3-margin-top">
+                <h2>Nova Categoria</h2>
+                <p>Criando uma nova categoria</p>
+
+                <form id="novacategoriaform">
+                    <label for="descricao" class="w3-text-teal">Nome: </label>
+                    <input type="text" name="descricao" id="descricao" class="w3-input w3-border w3-light-grey">
+                </form>
+                <br>
+                <button class="w3-btn w3-blue-gray w3-large" onclick="novaCategoria()">+</button>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="js/crud.js"></script>
+    <script src="js/createcategoria.js"></script>
+
+</body>
+
+</html>
